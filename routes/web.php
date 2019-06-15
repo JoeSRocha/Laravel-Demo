@@ -16,9 +16,10 @@ Route::get('/', function () {
 });
 
 
+// Pass Optional parameter through URL
 Route::get('user/{name?}', function ($name = null) {
     return "Hello $name";
 });
 
-Route::get('/user', 'UserController@index');
+Route::get('/home', 'HomeController');
 
